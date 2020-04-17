@@ -52,16 +52,7 @@ class Vehicle {
     {
         $this->name = $name;
     }
-    public function start()
-    {
-        try {
-            $this->hasParkBrake = true;
-        } catch (Exception $e) {
-            echo "Exception received  : ". $e->getMessage();
-        } finally{
-            echo '<br>' .'<br>' ."DRIVING MY CAR LIKE A 🍩" .'<br>' .'<br>' .'<img src="https://media.giphy.com/media/wKBz6El4XUdFK/giphy.gif"/>' .'<br>' .'<br>';
-        }
-    }
+
     public function forward()
     {
         $this->currentSpeed = 120;

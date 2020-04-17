@@ -6,8 +6,8 @@ Autoloader::register();
 $car1 = new Car('car', 'red', 5, 36,'premium gas');
 $car1Name = "Car 1";
 $car1->setName($car1Name);
-var_dump(Car::ALLOWED_ENERGIES);
 
+$car1->setHasParkBrake(false);
 $car2 = new Car('car', 'blue', 2, 110, 'regular gas');
 
 echo $car1Name .'<br>' .'<br>';
